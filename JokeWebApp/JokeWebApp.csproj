@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-JokeWebApp-4C47979A-C2DD-491E-B54A-9642CE4CB3DD</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.AspNetCore.Authentication.Google" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.22" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.22" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.22" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="3.1.8" />
+  </ItemGroup>
+
+</Project>
